@@ -1,0 +1,19 @@
+
+""" >>> from app import db, User , Profile
+>>> db.create_all() 
+>>> sa=User(name="Sarfraj Ansari")
+>>> saProfile=Profile(username="sa_sarfraj", user=jc)           
+>>> db.session.add_all([sa,saProfile])  
+>>> db.session.commit()
+>>> sa.profile
+<Profie:sa_sarfraj>
+>>> saProfile.user
+<User:Sarfraj Ansari>
+>>> saProfile=Profile(username="sa_sarfraj_ansari", user=jc) 
+>>> db.session.add(saProfile)           
+>>> db.session.commit()
+>>> sa.profile     
+<Profie:sa-sarfraj_ansari>
+>>> saProfile.user                                            
+<User:Sarfraj Ansari> """
+
